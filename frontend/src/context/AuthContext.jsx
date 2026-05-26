@@ -121,8 +121,7 @@ export const AuthProvider = ({
       async (
         name,
         email,
-        password,
-        phoneNumber
+        password
       ) => {
 
         setLoading(true);
@@ -138,7 +137,6 @@ export const AuthProvider = ({
                 name,
                 email,
                 password,
-                phoneNumber,
               }
             );
 

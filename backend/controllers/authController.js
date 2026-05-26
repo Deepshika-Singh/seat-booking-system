@@ -5,7 +5,7 @@ import generateToken from "../utils/generateToken.js";
 
 export const signup = async (req, res) => {
   try {
-    const { name, email, password, phoneNumber } = req.body;
+    const { name, email, password} = req.body;
 
     const existingUser = await User.findOne({ email });
 
@@ -23,7 +23,6 @@ export const signup = async (req, res) => {
       name,
       email,
       password,
-      phoneNumber,
     });
 
     const token = generateToken(user);

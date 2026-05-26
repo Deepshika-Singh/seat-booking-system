@@ -24,11 +24,11 @@ const userSchema = new mongoose.Schema({
     enum:['user','admin'],
     default: 'user'
   },
-  phoneNumber:{
-    type: String,
-    required: true,
-    unique: true
-  },
+  // phoneNumber:{
+  //   type: String,
+  //   required: true,
+  //   unique: true
+  // },
   isVerified:{
     type: Boolean,
     default: false
