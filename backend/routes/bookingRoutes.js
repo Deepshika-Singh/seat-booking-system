@@ -9,6 +9,6 @@ const bookingRouter = express.Router();
 bookingRouter.post("/book-seat", protect, bookSeat);
 // bookingRouter.get("/my-bookings", protect, getMyBookings);
 
-bookingRouter.get("/my-bookings",getMyBookings);
+bookingRouter.get("/my-bookings",protect,getMyBookings);
 
 export default bookingRouter;

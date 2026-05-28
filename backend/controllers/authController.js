@@ -32,8 +32,8 @@ export const signup = async (req, res) => {
       // secure: true,
       // sameSite: "strict",
       httpOnly: true,
-      secure: false, // ⚠️ important for localhost
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       maxAge: 24 * 60 * 60 * 1000,
     });
 
