@@ -9,7 +9,7 @@ router.post("/", protect, authorizeRoles("admin"), createEvent);
 router.delete("/:id", protect, authorizeRoles("admin"), deleteEvent);
 router.put("/:id", protect, authorizeRoles("admin"), updateEvent);
 router.get("/:id", protect, getEventById);
-router.get("/", protect, getAllEvents);
+router.get("/", getAllEvents);
 
 export default router;
 
