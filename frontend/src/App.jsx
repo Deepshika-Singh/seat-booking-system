@@ -108,11 +108,7 @@ function App() {
 
                 <Route
                   path="/admin"
-                  element={
-                    <AdminRoute>
-                      <AdminEvents />
-                    </AdminRoute>
-                  }
+                  element={<Navigate to="/admin/events" replace />}
                 />
 
                 <Route
