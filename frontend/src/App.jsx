@@ -2,6 +2,7 @@ import {
   Route,
   Routes,
   Link,
+  Navigate,
 } from "react-router-dom";
 
 import {
